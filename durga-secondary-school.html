@@ -1,0 +1,1698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Durga Secondary School | Simar, Baitadi, Nepal</title>
+<meta name="description" content="Durga Secondary School, Simar, Dilasaini Rural Municipality-3, Baitadi - ECD to Grade 12, NEB & CTEVT affiliated, Technical Civil Engineering Program. Quality Education for Excellence and Innovation.">
+<meta name="keywords" content="Durga Secondary School, Baitadi, Simar, Civil Engineering School Nepal, CTEVT, NEB School Baitadi, Sudurpashchim School">
+<meta name="author" content="Durga Secondary School">
+<meta property="og:title" content="Durga Secondary School - Simar, Baitadi">
+<meta property="og:description" content="Quality Education for Excellence and Innovation. ECD to Grade 12 with Technical Civil Engineering Program.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   DURGA SECONDARY SCHOOL — STYLESHEET
+   Theme: Deep Navy + Antique Gold | Serif/Sans pairing
+   ============================================================ */
+
+:root{
+  --navy-900:#06101f;
+  --navy-800:#0a1c33;
+  --navy-700:#102a4c;
+  --navy-600:#173a64;
+  --gold-500:#d4af37;
+  --gold-300:#f4d785;
+  --gold-100:#fbf0d2;
+  --ivory:#f6f3ec;
+  --ink-muted:#aebbd1;
+
+  --font-display:'Playfair Display', serif;
+  --font-body:'Inter', sans-serif;
+  --font-script:'Cormorant Garamond', serif;
+
+  --radius-lg:20px;
+  --radius-md:12px;
+  --shadow-soft:0 20px 60px -20px rgba(0,0,0,.55);
+  --transition:all .35s cubic-bezier(.4,0,.2,1);
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+html{scroll-behavior:smooth;}
+
+body{
+  font-family:var(--font-body);
+  background:var(--navy-900);
+  color:var(--ivory);
+  line-height:1.7;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+
+img{max-width:100%;display:block;}
+
+.container{
+  width:100%;
+  max-width:1240px;
+  margin:0 auto;
+  padding:0 24px;
+}
+
+a{text-decoration:none;color:inherit;}
+
+::selection{background:var(--gold-500);color:var(--navy-900);}
+
+/* Scrollbar */
+::-webkit-scrollbar{width:10px;}
+::-webkit-scrollbar-track{background:var(--navy-900);}
+::-webkit-scrollbar-thumb{background:var(--gold-500);border-radius:10px;}
+
+/* ============================================================
+   PRELOADER
+   ============================================================ */
+.preloader{
+  position:fixed;inset:0;z-index:9999;
+  background:var(--navy-900);
+  display:flex;align-items:center;justify-content:center;
+  transition:opacity .6s ease, visibility .6s ease;
+}
+.preloader.loaded{opacity:0;visibility:hidden;}
+.preloader-seal{
+  position:relative;width:90px;height:90px;
+  display:flex;align-items:center;justify-content:center;
+  color:var(--gold-500);
+}
+.seal-ring{
+  position:absolute;inset:0;width:100%;height:100%;
+  animation:spin 3s linear infinite;
+}
+.seal-letter{
+  font-family:var(--font-display);font-size:2.2rem;font-weight:800;
+  color:var(--gold-300);
+}
+@keyframes spin{to{transform:rotate(360deg);}}
+
+/* ============================================================
+   TYPOGRAPHY HELPERS
+   ============================================================ */
+.section-eyebrow{
+  font-family:var(--font-script);
+  font-style:italic;
+  font-size:1.15rem;
+  color:var(--gold-300);
+  letter-spacing:.04em;
+  margin-bottom:10px;
+}
+.section-title{
+  font-family:var(--font-display);
+  font-weight:800;
+  font-size:clamp(2rem, 4vw, 2.9rem);
+  color:var(--ivory);
+  margin-bottom:18px;
+  letter-spacing:.01em;
+}
+.section-lead{
+  color:var(--ink-muted);
+  max-width:640px;
+  font-size:1.05rem;
+  margin-bottom:20px;
+}
+.centered{text-align:center;margin-left:auto;margin-right:auto;}
+.section-lead.centered{margin-left:auto;margin-right:auto;}
+
+.section{
+  padding:100px 0;
+  position:relative;
+}
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:15px 34px;
+  border-radius:999px;
+  font-weight:600;
+  font-size:.95rem;
+  letter-spacing:.03em;
+  transition:var(--transition);
+  border:1px solid transparent;
+  cursor:pointer;
+  text-transform:uppercase;
+  font-family:var(--font-body);
+}
+.btn-gold{
+  background:linear-gradient(135deg, var(--gold-300), var(--gold-500));
+  color:var(--navy-900);
+  box-shadow:0 10px 30px -8px rgba(212,175,55,.55);
+}
+.btn-gold:hover{
+  transform:translateY(-3px);
+  box-shadow:0 16px 36px -10px rgba(212,175,55,.7);
+}
+.btn-outline{
+  border-color:rgba(246,243,236,.35);
+  color:var(--ivory);
+  background:rgba(255,255,255,.04);
+}
+.btn-outline:hover{
+  border-color:var(--gold-300);
+  color:var(--gold-300);
+  transform:translateY(-3px);
+}
+.btn-outline-light{
+  border-color:rgba(255,255,255,.5);
+  color:#fff;
+}
+.btn-outline-light:hover{
+  background:#fff;
+  color:var(--navy-900);
+  transform:translateY(-3px);
+}
+
+/* ============================================================
+   GLASSMORPHISM
+   ============================================================ */
+.glass{
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.08);
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+  border-radius:var(--radius-lg);
+  box-shadow:var(--shadow-soft);
+}
+
+/* ============================================================
+   HEADER / NAV
+   ============================================================ */
+.site-header{
+  position:fixed;top:0;left:0;right:0;
+  z-index:1000;
+  padding:18px 0;
+  transition:var(--transition);
+  background:transparent;
+}
+.site-header.scrolled{
+  background:rgba(6,16,31,.85);
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+  padding:10px 0;
+  border-bottom:1px solid rgba(212,175,55,.15);
+}
+.header-inner{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:24px;
+}
+.brand{display:flex;align-items:center;gap:12px;}
+.brand-seal{
+  width:46px;height:46px;color:var(--gold-500);flex-shrink:0;
+  transition:var(--transition);
+}
+.site-header.scrolled .brand-seal{width:40px;height:40px;}
+.brand-text{display:flex;flex-direction:column;line-height:1.2;}
+.brand-text strong{
+  font-family:var(--font-display);
+  font-size:1.05rem;
+  color:var(--ivory);
+  font-weight:700;
+}
+.brand-text em{
+  font-style:normal;
+  font-size:.7rem;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--gold-300);
+}
+
+.main-nav ul{
+  display:flex;gap:6px;list-style:none;
+}
+.main-nav a{
+  display:block;
+  padding:10px 16px;
+  font-size:.9rem;
+  font-weight:500;
+  color:var(--ink-muted);
+  border-radius:999px;
+  transition:var(--transition);
+  position:relative;
+}
+.main-nav a:hover,
+.main-nav a.active{
+  color:var(--navy-900);
+  background:var(--gold-300);
+}
+
+.nav-toggle{
+  display:none;
+  flex-direction:column;
+  justify-content:center;
+  gap:5px;
+  width:42px;height:42px;
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:10px;
+  cursor:pointer;
+}
+.nav-toggle span{
+  display:block;width:20px;height:2px;
+  background:var(--gold-300);
+  margin:0 auto;
+  transition:var(--transition);
+}
+.nav-toggle.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.nav-toggle.open span:nth-child(2){opacity:0;}
+.nav-toggle.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero{
+  position:relative;
+  min-height:100vh;
+  display:flex;align-items:center;
+  overflow:hidden;
+}
+.hero-bg{
+  position:absolute;inset:0;
+  background-size:cover;background-position:center;
+  animation:heroZoom 24s ease-in-out infinite alternate;
+}
+@keyframes heroZoom{
+  0%{transform:scale(1);}
+  100%{transform:scale(1.12);}
+}
+.hero-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(180deg, rgba(6,16,31,.55) 0%, rgba(6,16,31,.78) 55%, rgba(6,16,31,.97) 100%);
+}
+.hero-pattern{
+  position:absolute;inset:0;
+  background-image:radial-gradient(circle at 1px 1px, rgba(212,175,55,.18) 1px, transparent 1px);
+  background-size:34px 34px;
+  opacity:.35;
+  pointer-events:none;
+}
+.hero-content{
+  position:relative;z-index:2;
+  text-align:center;
+  max-width:880px;
+  margin:0 auto;
+  padding-top:80px;
+}
+.hero-eyebrow{
+  font-family:var(--font-script);
+  font-style:italic;
+  color:var(--gold-300);
+  font-size:1.05rem;
+  letter-spacing:.06em;
+  margin-bottom:18px;
+}
+.hero-title{
+  font-family:var(--font-display);
+  font-weight:900;
+  font-size:clamp(2.4rem, 6.5vw, 4.6rem);
+  line-height:1.12;
+  color:var(--ivory);
+  margin-bottom:20px;
+}
+.hero-title span{
+  color:var(--gold-300);
+  background:linear-gradient(135deg, var(--gold-300), var(--gold-500));
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+}
+.hero-subtitle{
+  font-size:clamp(1rem, 2vw, 1.3rem);
+  color:var(--ink-muted);
+  max-width:640px;
+  margin:0 auto 14px;
+}
+.hero-motto{
+  font-family:var(--font-script);
+  font-style:italic;
+  font-size:1.2rem;
+  color:var(--gold-300);
+  margin-bottom:38px;
+}
+.hero-actions{
+  display:flex;gap:18px;justify-content:center;flex-wrap:wrap;
+}
+
+.scroll-cue{
+  position:absolute;bottom:34px;left:50%;transform:translateX(-50%);
+  z-index:2;
+  width:28px;height:46px;
+  border:2px solid rgba(246,243,236,.4);
+  border-radius:20px;
+  display:flex;justify-content:center;padding-top:8px;
+}
+.scroll-cue span{
+  width:5px;height:5px;border-radius:50%;
+  background:var(--gold-300);
+  animation:scrollCue 1.8s ease infinite;
+}
+@keyframes scrollCue{
+  0%{transform:translateY(0);opacity:1;}
+  70%{transform:translateY(14px);opacity:0;}
+  100%{opacity:0;}
+}
+
+/* ============================================================
+   FACTS STRIP
+   ============================================================ */
+.facts-strip{
+  background:var(--navy-800);
+  border-bottom:1px solid rgba(212,175,55,.12);
+  padding:36px 0;
+}
+.facts-grid{
+  display:grid;
+  grid-template-columns:repeat(5, 1fr);
+  gap:24px;
+}
+.fact{
+  display:flex;align-items:center;gap:14px;
+}
+.fact-icon{font-size:1.8rem;line-height:1;}
+.fact strong{
+  display:block;font-family:var(--font-display);font-weight:700;
+  font-size:1.05rem;color:var(--gold-300);
+}
+.fact small{color:var(--ink-muted);font-size:.78rem;letter-spacing:.04em;text-transform:uppercase;}
+
+/* ============================================================
+   ABOUT
+   ============================================================ */
+.about{background:var(--navy-900);}
+.about-grid{
+  display:grid;
+  grid-template-columns:1fr 1.15fr;
+  gap:64px;
+  align-items:center;
+  margin-bottom:80px;
+}
+.about-media{position:relative;}
+.about-media img{
+  border-radius:var(--radius-lg);
+  box-shadow:var(--shadow-soft);
+}
+.about-badge{
+  position:absolute;
+  bottom:-26px;right:-26px;
+  background:linear-gradient(135deg, var(--gold-300), var(--gold-500));
+  color:var(--navy-900);
+  border-radius:var(--radius-md);
+  padding:18px 26px;
+  text-align:center;
+  box-shadow:0 16px 36px -10px rgba(212,175,55,.55);
+}
+.about-badge strong{display:block;font-family:var(--font-display);font-size:1.7rem;font-weight:800;}
+.about-badge span{font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;}
+
+.about-content p{color:var(--ink-muted);margin-bottom:16px;}
+.about-points{list-style:none;margin-top:24px;display:grid;gap:12px;}
+.about-points li{
+  display:flex;align-items:flex-start;gap:10px;
+  font-size:.95rem;color:var(--ivory);
+}
+.about-points li span{
+  color:var(--gold-500);font-weight:700;
+}
+
+/* Principal */
+.principal-card{
+  display:grid;
+  grid-template-columns:220px 1fr;
+  gap:40px;
+  align-items:center;
+  padding:46px;
+  position:relative;
+  overflow:hidden;
+}
+.principal-card::before{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(135deg, rgba(212,175,55,.08), transparent 60%);
+  pointer-events:none;
+}
+.principal-photo img{
+  border-radius:var(--radius-md);
+  border:2px solid rgba(212,175,55,.35);
+  aspect-ratio:1/1;object-fit:cover;
+}
+.quote-mark{
+  font-family:var(--font-display);
+  font-size:3.5rem;color:var(--gold-500);
+  line-height:1;display:block;margin-bottom:6px;
+}
+.principal-text p{
+  font-size:1.1rem;color:var(--ivory);font-style:italic;
+  font-family:var(--font-script);
+  line-height:1.6;
+  margin-bottom:20px;
+}
+.principal-meta strong{display:block;font-family:var(--font-display);font-size:1.1rem;color:var(--gold-300);}
+.principal-meta span{font-size:.85rem;color:var(--ink-muted);text-transform:uppercase;letter-spacing:.06em;}
+
+/* ============================================================
+   ACADEMICS
+   ============================================================ */
+.academics{background:var(--navy-800);}
+.academics-grid{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:26px;
+  margin-top:50px;
+}
+.academic-card{
+  padding:34px 28px;
+  transition:var(--transition);
+  position:relative;
+}
+.academic-card:hover{
+  transform:translateY(-8px);
+  border-color:rgba(212,175,55,.4);
+}
+.academic-card--accent{
+  border-color:rgba(212,175,55,.45);
+  background:linear-gradient(160deg, rgba(212,175,55,.12), rgba(255,255,255,.03));
+}
+.academic-icon{font-size:2.2rem;margin-bottom:14px;}
+.academic-card h3{
+  font-family:var(--font-display);font-size:1.3rem;color:var(--ivory);margin-bottom:10px;
+}
+.academic-card p{color:var(--ink-muted);font-size:.95rem;}
+.card-link{
+  display:inline-block;margin-top:14px;color:var(--gold-300);font-weight:600;font-size:.9rem;
+  transition:var(--transition);
+}
+.card-link:hover{color:var(--gold-100);transform:translateX(4px);}
+
+/* ============================================================
+   CIVIL ENGINEERING
+   ============================================================ */
+.civil{
+  background:var(--navy-700);
+  overflow:hidden;
+}
+.civil-bg{
+  position:absolute;inset:0;
+  background:
+    radial-gradient(circle at 85% 20%, rgba(212,175,55,.18), transparent 45%),
+    radial-gradient(circle at 10% 80%, rgba(212,175,55,.10), transparent 40%);
+  pointer-events:none;
+}
+.civil-inner{
+  display:grid;grid-template-columns:1.2fr 1fr;
+  gap:60px;align-items:center;position:relative;z-index:1;
+}
+.civil .section-eyebrow{
+  text-transform:uppercase;font-style:normal;font-family:var(--font-body);
+  font-weight:700;letter-spacing:.16em;font-size:.8rem;color:var(--gold-300);
+}
+.civil-content p{color:var(--ink-muted);margin:18px 0 30px;max-width:520px;}
+.civil-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:14px;
+}
+.civil-item{
+  display:flex;align-items:center;gap:14px;
+  padding:14px 18px;
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:var(--radius-md);
+  font-size:.92rem;font-weight:500;
+  transition:var(--transition);
+}
+.civil-item:hover{
+  border-color:var(--gold-500);
+  background:rgba(212,175,55,.08);
+  transform:translateX(4px);
+}
+.civil-item .num{
+  font-family:var(--font-display);font-weight:800;color:var(--gold-500);font-size:1rem;
+}
+.civil-media{position:relative;}
+.civil-media img{border-radius:var(--radius-lg);box-shadow:var(--shadow-soft);}
+.civil-tag{
+  position:absolute;top:-18px;left:-18px;
+  background:var(--navy-900);
+  border:1px solid var(--gold-500);
+  color:var(--gold-300);
+  padding:10px 20px;border-radius:999px;
+  font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+}
+
+/* ============================================================
+   TEACHERS
+   ============================================================ */
+.teachers{background:var(--navy-900);}
+.teachers-grid{
+  display:grid;grid-template-columns:repeat(auto-fit, minmax(260px,1fr));
+  gap:30px;margin-top:50px;max-width:680px;margin-inline:auto;
+}
+.teacher-card{
+  padding:34px;text-align:center;
+  transition:var(--transition);
+}
+.teacher-card:hover{
+  transform:translateY(-10px);
+  border-color:rgba(212,175,55,.4);
+}
+.teacher-photo{
+  width:120px;height:120px;border-radius:50%;
+  overflow:hidden;margin:0 auto 20px;
+  border:3px solid var(--gold-500);
+  padding:3px;
+}
+.teacher-photo img{border-radius:50%;width:100%;height:100%;object-fit:cover;}
+.teacher-card h3{font-family:var(--font-display);font-size:1.25rem;color:var(--ivory);margin-bottom:8px;}
+.teacher-role{
+  color:var(--gold-300);font-size:.85rem;text-transform:uppercase;letter-spacing:.08em;font-weight:600;
+}
+
+/* ============================================================
+   ACHIEVEMENTS
+   ============================================================ */
+.achievements{background:var(--navy-800);}
+.achievements-grid{
+  display:grid;grid-template-columns:repeat(auto-fit, minmax(240px,1fr));
+  gap:30px;max-width:640px;margin:50px auto 70px;
+}
+.achievement-card{
+  padding:34px;text-align:center;
+  transition:var(--transition);
+}
+.achievement-card:hover{transform:translateY(-10px);border-color:rgba(212,175,55,.4);}
+.achievement-photo{
+  width:96px;height:96px;border-radius:50%;overflow:hidden;margin:0 auto 18px;
+  border:3px solid var(--gold-500);padding:3px;
+}
+.achievement-photo img{border-radius:50%;width:100%;height:100%;object-fit:cover;}
+.achievement-card h3{font-family:var(--font-display);font-size:1.2rem;margin-bottom:10px;}
+.gpa-badge{
+  display:inline-block;
+  background:linear-gradient(135deg, var(--gold-300), var(--gold-500));
+  color:var(--navy-900);
+  font-weight:800;font-size:.95rem;
+  padding:6px 18px;border-radius:999px;margin-bottom:10px;
+}
+.achievement-label{
+  display:block;color:var(--ink-muted);font-size:.85rem;text-transform:uppercase;letter-spacing:.06em;
+}
+
+/* Stats */
+.stats-grid{
+  display:grid;grid-template-columns:repeat(5, 1fr);
+  gap:20px;
+  border-top:1px solid rgba(255,255,255,.08);
+  padding-top:50px;
+}
+.stat-card{text-align:center;}
+.stat-number{
+  display:block;
+  font-family:var(--font-display);font-weight:800;
+  font-size:clamp(1.8rem, 3vw, 2.6rem);
+  color:var(--gold-300);
+  margin-bottom:6px;
+}
+.stat-label{
+  color:var(--ink-muted);font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;
+}
+
+/* ============================================================
+   FACILITIES
+   ============================================================ */
+.facilities{background:var(--navy-900);}
+.facilities-grid{
+  display:grid;grid-template-columns:repeat(3, 1fr);
+  gap:20px;margin-top:50px;
+}
+.facility-card{
+  background:rgba(255,255,255,.03);
+  border:1px solid rgba(255,255,255,.07);
+  border-radius:var(--radius-md);
+  padding:30px 20px;text-align:center;
+  transition:var(--transition);
+}
+.facility-card:hover{
+  background:rgba(212,175,55,.08);
+  border-color:rgba(212,175,55,.4);
+  transform:translateY(-6px);
+}
+.facility-card span{font-size:2rem;display:block;margin-bottom:12px;}
+.facility-card h3{font-family:var(--font-display);font-size:1.05rem;font-weight:600;color:var(--ivory);}
+
+/* ============================================================
+   GALLERY
+   ============================================================ */
+.gallery{background:var(--navy-800);}
+.gallery-filters{
+  display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:40px 0 40px;
+}
+.filter-btn{
+  padding:10px 22px;border-radius:999px;
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.1);
+  color:var(--ink-muted);
+  font-size:.85rem;font-weight:500;cursor:pointer;
+  transition:var(--transition);
+}
+.filter-btn:hover{color:var(--gold-300);border-color:var(--gold-500);}
+.filter-btn.active{
+  background:linear-gradient(135deg, var(--gold-300), var(--gold-500));
+  color:var(--navy-900);border-color:transparent;font-weight:700;
+}
+.gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(4, 1fr);
+  gap:20px;
+}
+.gallery-item{
+  position:relative;border-radius:var(--radius-md);overflow:hidden;
+  aspect-ratio:4/3;
+  cursor:pointer;
+  transition:var(--transition);
+}
+.gallery-item.hide{display:none;}
+.gallery-item img{
+  width:100%;height:100%;object-fit:cover;
+  transition:transform .6s ease;
+}
+.gallery-item:hover img{transform:scale(1.1);}
+.gallery-item figcaption{
+  position:absolute;left:0;right:0;bottom:0;
+  padding:14px 16px;
+  background:linear-gradient(0deg, rgba(6,16,31,.92), transparent);
+  color:var(--ivory);font-size:.9rem;font-weight:600;
+  transform:translateY(8px);opacity:.85;
+  transition:var(--transition);
+}
+.gallery-item:hover figcaption{transform:translateY(0);opacity:1;color:var(--gold-300);}
+
+/* ============================================================
+   NOTICES
+   ============================================================ */
+.notices{background:var(--navy-900);}
+.notices-grid{
+  display:grid;grid-template-columns:repeat(2, 1fr);
+  gap:24px;margin-top:50px;
+}
+.notice-card{
+  display:flex;gap:22px;padding:28px;
+  transition:var(--transition);
+}
+.notice-card:hover{transform:translateY(-6px);border-color:rgba(212,175,55,.35);}
+.notice-date{
+  flex-shrink:0;width:64px;height:64px;border-radius:var(--radius-md);
+  background:linear-gradient(135deg, var(--gold-300), var(--gold-500));
+  color:var(--navy-900);display:flex;flex-direction:column;align-items:center;justify-content:center;
+}
+.notice-date span{font-family:var(--font-display);font-size:1.4rem;font-weight:800;line-height:1;}
+.notice-date small{font-size:.7rem;text-transform:uppercase;letter-spacing:.06em;}
+.notice-tag{
+  display:inline-block;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;
+  color:var(--gold-300);font-weight:700;margin-bottom:8px;
+}
+.notice-body h3{font-family:var(--font-display);font-size:1.05rem;color:var(--ivory);margin-bottom:8px;}
+.notice-body p{color:var(--ink-muted);font-size:.9rem;}
+
+/* ============================================================
+   TESTIMONIALS
+   ============================================================ */
+.testimonials{background:var(--navy-800);}
+.testimonials-grid{
+  display:grid;grid-template-columns:repeat(auto-fit, minmax(280px,1fr));
+  gap:26px;margin-top:50px;
+}
+.testimonial-card{padding:32px;transition:var(--transition);}
+.testimonial-card:hover{transform:translateY(-8px);border-color:rgba(212,175,55,.35);}
+.testimonial-head{display:flex;align-items:center;gap:14px;margin-bottom:18px;}
+.testimonial-head img{
+  width:54px;height:54px;border-radius:50%;object-fit:cover;
+  border:2px solid var(--gold-500);
+}
+.testimonial-head strong{display:block;font-family:var(--font-display);color:var(--ivory);}
+.testimonial-head span{font-size:.8rem;color:var(--gold-300);text-transform:uppercase;letter-spacing:.05em;}
+.testimonial-card p{
+  font-family:var(--font-script);font-style:italic;color:var(--ivory);font-size:1.05rem;
+}
+
+/* ============================================================
+   ADMISSION
+   ============================================================ */
+.admission{
+  position:relative;
+  background:linear-gradient(135deg, var(--navy-700), var(--navy-900));
+  text-align:center;
+  overflow:hidden;
+}
+.admission-bg{
+  position:absolute;inset:0;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(212,175,55,.22), transparent 45%),
+    radial-gradient(circle at 80% 70%, rgba(212,175,55,.15), transparent 40%);
+}
+.admission-inner{position:relative;z-index:1;max-width:680px;}
+.admission-inner .section-title{margin-bottom:14px;}
+.admission-inner p{color:var(--ink-muted);margin-bottom:34px;}
+.admission-actions{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;}
+
+/* ============================================================
+   CONTACT
+   ============================================================ */
+.contact{background:var(--navy-900);}
+.contact-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;margin-bottom:60px;
+}
+.contact-info .section-lead{margin-bottom:30px;}
+.contact-list{list-style:none;display:grid;gap:22px;margin-bottom:30px;}
+.contact-list li{display:flex;gap:16px;align-items:flex-start;}
+.contact-icon{
+  width:46px;height:46px;border-radius:var(--radius-md);
+  background:rgba(212,175,55,.12);border:1px solid rgba(212,175,55,.3);
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.2rem;
+}
+.contact-list strong{display:block;color:var(--gold-300);font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px;}
+.contact-list a, .contact-list span{color:var(--ivory);font-size:.98rem;}
+.contact-list a:hover{color:var(--gold-300);}
+
+.social-links{display:flex;gap:12px;}
+.social-links a{
+  width:44px;height:44px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);
+  color:var(--gold-300);transition:var(--transition);
+}
+.social-links a:hover{
+  background:var(--gold-500);color:var(--navy-900);transform:translateY(-4px);
+}
+
+.contact-form{padding:36px;display:grid;gap:16px;}
+.contact-form h3{font-family:var(--font-display);font-size:1.3rem;color:var(--ivory);margin-bottom:6px;}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.contact-form input,
+.contact-form textarea{
+  width:100%;padding:14px 16px;
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:var(--radius-md);
+  color:var(--ivory);font-family:var(--font-body);font-size:.95rem;
+  transition:var(--transition);resize:vertical;
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{color:var(--ink-muted);}
+.contact-form input:focus,
+.contact-form textarea:focus{
+  outline:none;border-color:var(--gold-500);
+  box-shadow:0 0 0 3px rgba(212,175,55,.15);
+}
+.contact-form .btn{justify-self:start;}
+
+.map-wrap{
+  border-radius:var(--radius-lg);overflow:hidden;
+  border:1px solid rgba(255,255,255,.08);
+  filter:grayscale(.3) brightness(.9);
+}
+.map-wrap iframe{width:100%;height:360px;border:0;display:block;}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.site-footer{
+  background:var(--navy-800);
+  border-top:1px solid rgba(212,175,55,.12);
+  padding:70px 0 0;
+}
+.footer-grid{
+  display:grid;grid-template-columns:1.6fr 1fr 1fr 1.2fr;
+  gap:50px;padding-bottom:50px;
+}
+.footer-brand p{color:var(--ink-muted);font-size:.92rem;margin:18px 0 10px;max-width:320px;}
+.footer-motto{font-family:var(--font-script);font-style:italic;color:var(--gold-300);}
+.footer-col h4{
+  font-family:var(--font-display);color:var(--ivory);margin-bottom:20px;font-size:1.1rem;
+}
+.footer-col ul{list-style:none;display:grid;gap:12px;}
+.footer-col a{color:var(--ink-muted);font-size:.92rem;transition:var(--transition);}
+.footer-col a:hover{color:var(--gold-300);padding-left:4px;}
+.footer-contact li{color:var(--ink-muted);font-size:.92rem;}
+.footer-contact{margin-bottom:20px;}
+
+.footer-bottom{
+  border-top:1px solid rgba(255,255,255,.06);
+  padding:22px 0;
+  display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
+  font-size:.82rem;color:var(--ink-muted);
+}
+.footer-bottom p{margin:0;}
+.footer-bottom .container{display:flex;justify-content:space-between;width:100%;flex-wrap:wrap;gap:10px;}
+
+/* ============================================================
+   BACK TO TOP
+   ============================================================ */
+.back-to-top{
+  position:fixed;bottom:28px;right:28px;z-index:900;
+  width:48px;height:48px;border-radius:50%;
+  background:linear-gradient(135deg, var(--gold-300), var(--gold-500));
+  color:var(--navy-900);
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.3rem;font-weight:800;
+  box-shadow:0 10px 26px -8px rgba(212,175,55,.6);
+  opacity:0;visibility:hidden;transform:translateY(10px);
+  transition:var(--transition);
+}
+.back-to-top.show{opacity:1;visibility:visible;transform:translateY(0);}
+.back-to-top:hover{transform:translateY(-4px);}
+
+/* ============================================================
+   SCROLL REVEAL
+   ============================================================ */
+.reveal{
+  opacity:0;
+  transform:translateY(34px);
+  transition:opacity .8s ease, transform .8s ease;
+}
+.reveal.in-view{
+  opacity:1;transform:translateY(0);
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 1024px){
+  .about-grid,
+  .civil-inner,
+  .contact-grid{grid-template-columns:1fr;gap:40px;}
+  .civil-inner{display:flex;flex-direction:column-reverse;}
+  .academics-grid{grid-template-columns:repeat(2,1fr);}
+  .facilities-grid{grid-template-columns:repeat(2,1fr);}
+  .gallery-grid{grid-template-columns:repeat(3,1fr);}
+  .stats-grid{grid-template-columns:repeat(3,1fr);gap:30px;}
+  .facts-grid{grid-template-columns:repeat(3,1fr);}
+  .footer-grid{grid-template-columns:1fr 1fr;}
+  .principal-card{grid-template-columns:160px 1fr;padding:34px;}
+}
+
+@media (max-width: 768px){
+  .main-nav{
+    position:fixed;top:0;right:0;
+    height:100vh;width:280px;
+    background:var(--navy-800);
+    border-left:1px solid rgba(212,175,55,.15);
+    padding:100px 30px;
+    transform:translateX(100%);
+    transition:transform .4s ease;
+    z-index:999;
+  }
+  .main-nav.open{transform:translateX(0);}
+  .main-nav ul{flex-direction:column;gap:6px;}
+  .main-nav a{padding:12px 16px;}
+  .nav-toggle{display:flex;}
+
+  .facts-grid{grid-template-columns:repeat(2,1fr);}
+  .academics-grid{grid-template-columns:1fr;}
+  .facilities-grid{grid-template-columns:1fr 1fr;}
+  .gallery-grid{grid-template-columns:repeat(2,1fr);}
+  .stats-grid{grid-template-columns:repeat(2,1fr);}
+  .notices-grid{grid-template-columns:1fr;}
+  .form-row{grid-template-columns:1fr;}
+  .principal-card{grid-template-columns:1fr;text-align:center;}
+  .principal-photo img{width:140px;margin:0 auto;}
+  .footer-grid{grid-template-columns:1fr;gap:36px;}
+  .section{padding:70px 0;}
+  .civil-tag{top:14px;left:14px;}
+}
+
+@media (max-width: 480px){
+  .facts-grid{grid-template-columns:1fr 1fr;}
+  .facilities-grid{grid-template-columns:1fr;}
+  .gallery-grid{grid-template-columns:1fr 1fr;}
+  .stats-grid{grid-template-columns:1fr 1fr;}
+  .hero-actions{flex-direction:column;width:100%;}
+  .hero-actions .btn{width:100%;}
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce){
+  *{animation:none !important;transition:none !important;}
+  .reveal{opacity:1;transform:none;}
+}
+
+</style>
+</head>
+<body>
+
+<!-- ================= PRELOADER ================= -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="preloader-seal">
+    <svg viewBox="0 0 100 100" class="seal-ring">
+      <circle cx="50" cy="50" r="46" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <circle cx="50" cy="50" r="38" fill="none" stroke="currentColor" stroke-width="0.5"/>
+    </svg>
+    <span class="seal-letter">D</span>
+  </div>
+</div>
+
+<!-- ================= HEADER / NAV ================= -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#home" class="brand">
+      <span class="brand-seal" aria-hidden="true">
+        <svg viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="46" fill="none" stroke="currentColor" stroke-width="3"/>
+          <circle cx="50" cy="50" r="36" fill="none" stroke="currentColor" stroke-width="1"/>
+          <text x="50" y="62" text-anchor="middle" font-family="Playfair Display" font-size="42" font-weight="800" fill="currentColor">D</text>
+        </svg>
+      </span>
+      <span class="brand-text">
+        <strong>Durga Secondary School</strong>
+        <em>Simar · Baitadi · Est. 2016 B.S.</em>
+      </span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Primary navigation">
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#academics">Academics</a></li>
+        <li><a href="#civil">Civil Engineering</a></li>
+        <li><a href="#teachers">Teachers</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#notices">Notices</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+  <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1920&auto=format&fit=crop')"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-pattern" aria-hidden="true"></div>
+
+  <div class="container hero-content">
+    <p class="hero-eyebrow reveal" data-reveal>Simar &middot; Dilasaini Rural Municipality&ndash;3 &middot; Baitadi &middot; Sudurpashchim Province</p>
+    <h1 class="hero-title reveal" data-reveal>Welcome to <span>Durga Secondary School</span></h1>
+    <p class="hero-subtitle reveal" data-reveal>Empowering Students Through Quality Education and Technical Excellence</p>
+    <p class="hero-motto reveal" data-reveal>&ldquo;Quality Education for Excellence and Innovation&rdquo;</p>
+
+    <div class="hero-actions reveal" data-reveal>
+      <a href="#academics" class="btn btn-gold">Explore Programs</a>
+      <a href="#contact" class="btn btn-outline">Contact Us</a>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+    <span></span>
+  </a>
+</section>
+
+<!-- ================= QUICK FACTS STRIP ================= -->
+<section class="facts-strip">
+  <div class="container facts-grid">
+    <div class="fact reveal" data-reveal>
+      <span class="fact-icon">🏫</span>
+      <div><strong>Est. 2016 B.S.</strong><small>Founding Year</small></div>
+    </div>
+    <div class="fact reveal" data-reveal>
+      <span class="fact-icon">🔢</span>
+      <div><strong>7418</strong><small>School Code</small></div>
+    </div>
+    <div class="fact reveal" data-reveal>
+      <span class="fact-icon">🎓</span>
+      <div><strong>ECD &ndash; Grade 12</strong><small>Academic Level</small></div>
+    </div>
+    <div class="fact reveal" data-reveal>
+      <span class="fact-icon">🏗️</span>
+      <div><strong>Civil Engineering</strong><small>Technical Program (9&ndash;12)</small></div>
+    </div>
+    <div class="fact reveal" data-reveal>
+      <span class="fact-icon">📜</span>
+      <div><strong>NEB &amp; CTEVT</strong><small>Affiliation</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="section about" id="about">
+  <div class="container about-grid">
+    <div class="about-media reveal" data-reveal>
+      <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=900&auto=format&fit=crop" alt="Students learning at Durga Secondary School">
+      <div class="about-badge">
+        <strong>695+</strong>
+        <span>Students Enrolled</span>
+      </div>
+    </div>
+
+    <div class="about-content">
+      <p class="section-eyebrow reveal" data-reveal>About Our School</p>
+      <h2 class="section-title reveal" data-reveal>A Legacy of Learning in the Heart of Baitadi</h2>
+      <p class="reveal" data-reveal>
+        Durga Secondary School is one of the leading community schools in Baitadi District. Established in 2016 B.S.,
+        the school provides quality education from <strong>ECD (Early Childhood Development) to Grade 12</strong>.
+        The school is affiliated with NEB and also offers a <strong>Technical Civil Engineering program from Grades 9&ndash;12</strong>
+        under the technical stream.
+      </p>
+      <p class="reveal" data-reveal>
+        Our institution focuses on academic excellence, technical skills, discipline, leadership, innovation,
+        and character development &mdash; shaping responsible citizens ready for higher education and professional careers.
+      </p>
+
+      <ul class="about-points reveal" data-reveal>
+        <li><span>✔</span> Public Community School serving Simar &amp; surrounding villages</li>
+        <li><span>✔</span> NEB &amp; CTEVT affiliated curriculum</li>
+        <li><span>✔</span> Scholarship support for deserving students</li>
+        <li><span>✔</span> Focus on discipline, leadership &amp; innovation</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Principal Message -->
+  <div class="container">
+    <div class="principal-card reveal" data-reveal>
+      <div class="principal-photo">
+        <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=400&auto=format&fit=crop" alt="Harinath Joshi, Principal of Durga Secondary School">
+      </div>
+      <div class="principal-text">
+        <span class="quote-mark" aria-hidden="true">&ldquo;</span>
+        <p>At Durga Secondary School, we are committed to providing quality education, technical knowledge, and strong moral values. Our goal is to prepare students for higher education, professional careers, and responsible citizenship.</p>
+        <div class="principal-meta">
+          <strong>Harinath Joshi</strong>
+          <span>Principal, Durga Secondary School</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ACADEMICS ================= -->
+<section class="section academics" id="academics">
+  <div class="container">
+    <p class="section-eyebrow reveal" data-reveal centered>Programs We Offer</p>
+    <h2 class="section-title centered reveal" data-reveal>Academics</h2>
+    <p class="section-lead centered reveal" data-reveal>
+      A complete academic pathway from early childhood to higher secondary level, alongside specialized technical education.
+    </p>
+
+    <div class="academics-grid">
+      <div class="academic-card glass reveal" data-reveal>
+        <div class="academic-icon">🌱</div>
+        <h3>ECD</h3>
+        <p>Early Childhood Development &mdash; nurturing curiosity and foundational skills for our youngest learners.</p>
+      </div>
+      <div class="academic-card glass reveal" data-reveal>
+        <div class="academic-icon">📘</div>
+        <h3>Basic Level</h3>
+        <p>Grades 1&ndash;8 building strong fundamentals in language, science, mathematics and social studies.</p>
+      </div>
+      <div class="academic-card glass reveal" data-reveal>
+        <div class="academic-icon">📗</div>
+        <h3>Secondary Level</h3>
+        <p>Grades 9&ndash;10 preparing students for the SEE examination with subject specialization.</p>
+      </div>
+      <div class="academic-card glass reveal" data-reveal>
+        <div class="academic-icon">📙</div>
+        <h3>Grade 11</h3>
+        <p>Higher secondary education under NEB, broadening academic streams and career pathways.</p>
+      </div>
+      <div class="academic-card glass reveal" data-reveal>
+        <div class="academic-icon">📕</div>
+        <h3>Grade 12</h3>
+        <p>Final year of higher secondary education, preparing students for university and professional life.</p>
+      </div>
+      <div class="academic-card glass academic-card--accent reveal" data-reveal>
+        <div class="academic-icon">🏗️</div>
+        <h3>Civil Engineering</h3>
+        <p>Technical Education stream for Grades 9&ndash;12 under CTEVT, blending theory with hands-on practical training.</p>
+        <a href="#civil" class="card-link">Learn more &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CIVIL ENGINEERING ================= -->
+<section class="section civil" id="civil">
+  <div class="civil-bg" aria-hidden="true"></div>
+  <div class="container civil-inner">
+    <div class="civil-content">
+      <p class="section-eyebrow">Technical Stream &middot; Grades 9&ndash;12</p>
+      <h2 class="section-title">Civil Engineering Program</h2>
+      <p class="reveal" data-reveal>
+        Our Technical Civil Engineering program equips students with practical and theoretical knowledge essential
+        for the construction and engineering sector, preparing them for further technical education or direct employment.
+      </p>
+
+      <div class="civil-grid reveal" data-reveal>
+        <div class="civil-item"><span class="num">01</span> Surveying</div>
+        <div class="civil-item"><span class="num">02</span> Engineering Drawing</div>
+        <div class="civil-item"><span class="num">03</span> Building Construction</div>
+        <div class="civil-item"><span class="num">04</span> Estimation &amp; Costing</div>
+        <div class="civil-item"><span class="num">05</span> Computer-Aided Design (CAD)</div>
+        <div class="civil-item"><span class="num">06</span> Structural Fundamentals</div>
+        <div class="civil-item"><span class="num">07</span> Project Work</div>
+      </div>
+    </div>
+
+    <div class="civil-media reveal" data-reveal>
+      <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=900&auto=format&fit=crop" alt="Civil Engineering practical class">
+      <div class="civil-tag">CTEVT Affiliated</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TEACHERS ================= -->
+<section class="section teachers" id="teachers">
+  <div class="container">
+    <p class="section-eyebrow reveal" data-reveal centered>Our Educators</p>
+    <h2 class="section-title centered reveal" data-reveal>Meet Our Teachers</h2>
+    <p class="section-lead centered reveal" data-reveal>
+      Experienced and dedicated faculty members guiding our Civil Engineering students with practical expertise.
+    </p>
+
+    <div class="teachers-grid">
+      <div class="teacher-card glass reveal" data-reveal>
+        <div class="teacher-photo">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop" alt="Puspa Raj Khadayat, Civil Engineering Instructor">
+        </div>
+        <h3>Puspa Raj Khadayat</h3>
+        <span class="teacher-role">Civil Engineering Instructor</span>
+      </div>
+      <div class="teacher-card glass reveal" data-reveal>
+        <div class="teacher-photo">
+          <img src="https://images.unsplash.com/photo-1500648767791-00d5a4ee9baa?q=80&w=400&auto=format&fit=crop" alt="Pusp Raj Pant, Civil Engineering Instructor">
+        </div>
+        <h3>Pusp Raj Pant</h3>
+        <span class="teacher-role">Civil Engineering Instructor</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ACHIEVEMENTS ================= -->
+<section class="section achievements" id="achievements">
+  <div class="container">
+    <p class="section-eyebrow reveal" data-reveal centered>Our Pride</p>
+    <h2 class="section-title centered reveal" data-reveal>Our Pride</h2>
+    <p class="section-lead centered reveal" data-reveal>
+      Celebrating the outstanding academic performance of our students.
+    </p>
+
+    <div class="achievements-grid">
+      <div class="achievement-card glass reveal" data-reveal>
+        <div class="achievement-photo">
+          <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=300&auto=format&fit=crop" alt="Ram Bohara, District Topper">
+        </div>
+        <h3>Ram Bohara</h3>
+        <div class="gpa-badge">GPA 3.72</div>
+        <span class="achievement-label">District Topper, Baitadi</span>
+      </div>
+      <div class="achievement-card glass reveal" data-reveal>
+        <div class="achievement-photo">
+          <img src="https://images.unsplash.com/photo-1544717297-fa95b6ee9643?q=80&w=300&auto=format&fit=crop" alt="Shyam Rana, District Topper">
+        </div>
+        <h3>Shyam Rana</h3>
+        <div class="gpa-badge">GPA 3.64</div>
+        <span class="achievement-label">District Topper, Baitadi</span>
+      </div>
+    </div>
+
+    <!-- Stats Counter -->
+    <div class="stats-grid reveal" data-reveal>
+      <div class="stat-card">
+        <span class="stat-number" data-count="695" data-suffix="+">0</span>
+        <span class="stat-label">Students</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number stat-text">ECD&ndash;12</span>
+        <span class="stat-label">Academic Levels</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number stat-text">Civil</span>
+        <span class="stat-label">Engineering Program</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number" data-count="20" data-suffix="+">0</span>
+        <span class="stat-label">Experienced Teachers</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number stat-text">✔</span>
+        <span class="stat-label">Scholarship Support</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FACILITIES ================= -->
+<section class="section facilities" id="facilities">
+  <div class="container">
+    <p class="section-eyebrow reveal" data-reveal centered>Campus Resources</p>
+    <h2 class="section-title centered reveal" data-reveal>Our Facilities</h2>
+
+    <div class="facilities-grid">
+      <div class="facility-card reveal" data-reveal><span>📚</span><h3>Library</h3></div>
+      <div class="facility-card reveal" data-reveal><span>💻</span><h3>Computer Lab</h3></div>
+      <div class="facility-card reveal" data-reveal><span>🏗️</span><h3>Civil Engineering Lab</h3></div>
+      <div class="facility-card reveal" data-reveal><span>⚽</span><h3>Sports</h3></div>
+      <div class="facility-card reveal" data-reveal><span>🧑‍⚕️</span><h3>Counseling</h3></div>
+      <div class="facility-card reveal" data-reveal><span>🎓</span><h3>Scholarship Opportunities</h3></div>
+      <div class="facility-card reveal" data-reveal><span>🖥️</span><h3>Smart Classrooms</h3></div>
+      <div class="facility-card reveal" data-reveal><span>🔬</span><h3>Science Lab</h3></div>
+      <div class="facility-card reveal" data-reveal><span>📡</span><h3>Internet Access</h3></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section class="section gallery" id="gallery">
+  <div class="container">
+    <p class="section-eyebrow reveal" data-reveal centered>Campus Life</p>
+    <h2 class="section-title centered reveal" data-reveal>Gallery</h2>
+    <p class="section-lead centered reveal" data-reveal>Glimpses of school life, practical learning, and celebrations.</p>
+
+    <div class="gallery-filters reveal" data-reveal>
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="campus">School Campus</button>
+      <button class="filter-btn" data-filter="civil">Civil Engineering Practical</button>
+      <button class="filter-btn" data-filter="classroom">Classroom Activities</button>
+      <button class="filter-btn" data-filter="sports">Sports</button>
+      <button class="filter-btn" data-filter="annual">Annual Program</button>
+      <button class="filter-btn" data-filter="see">SEE Farewell</button>
+      <button class="filter-btn" data-filter="tour">Educational Tour</button>
+    </div>
+
+    <div class="gallery-grid">
+      <figure class="gallery-item reveal" data-reveal data-cat="campus">
+        <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?q=80&w=600&auto=format&fit=crop" alt="School campus building">
+        <figcaption>School Campus</figcaption>
+      </figure>
+      <figure class="gallery-item reveal" data-reveal data-cat="civil">
+        <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=600&auto=format&fit=crop" alt="Civil engineering practical session">
+        <figcaption>Civil Engineering Practical</figcaption>
+      </figure>
+      <figure class="gallery-item reveal" data-reveal data-cat="classroom">
+        <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?q=80&w=600&auto=format&fit=crop" alt="Students in classroom activity">
+        <figcaption>Classroom Activities</figcaption>
+      </figure>
+      <figure class="gallery-item reveal" data-reveal data-cat="sports">
+        <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=600&auto=format&fit=crop" alt="Students playing sports">
+        <figcaption>Sports Day</figcaption>
+      </figure>
+      <figure class="gallery-item reveal" data-reveal data-cat="annual">
+        <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=600&auto=format&fit=crop" alt="Annual program celebration">
+        <figcaption>Annual Program</figcaption>
+      </figure>
+      <figure class="gallery-item reveal" data-reveal data-cat="see">
+        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=600&auto=format&fit=crop" alt="SEE farewell program">
+        <figcaption>SEE Farewell</figcaption>
+      </figure>
+      <figure class="gallery-item reveal" data-reveal data-cat="tour">
+        <img src="https://images.unsplash.com/photo-1501555088652-021faa106b9b?q=80&w=600&auto=format&fit=crop" alt="Educational tour with students">
+        <figcaption>Educational Tour</figcaption>
+      </figure>
+      <figure class="gallery-item reveal" data-reveal data-cat="civil">
+        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=600&auto=format&fit=crop" alt="Civil engineering survey work">
+        <figcaption>Survey Practical</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= NOTICES ================= -->
+<section class="section notices" id="notices">
+  <div class="container">
+    <p class="section-eyebrow reveal" data-reveal centered>Stay Updated</p>
+    <h2 class="section-title centered reveal" data-reveal>Notice Board</h2>
+
+    <div class="notices-grid">
+      <article class="notice-card glass reveal" data-reveal>
+        <div class="notice-date"><span>15</span><small>Jeth</small></div>
+        <div class="notice-body">
+          <span class="notice-tag">Admission</span>
+          <h3>New Academic Session Admissions Open (ECD to Grade 12)</h3>
+          <p>Forms are available at the school office. Contact administration for details on intake and scholarships.</p>
+        </div>
+      </article>
+      <article class="notice-card glass reveal" data-reveal>
+        <div class="notice-date"><span>10</span><small>Jeth</small></div>
+        <div class="notice-body">
+          <span class="notice-tag">Civil Engineering</span>
+          <h3>Civil Engineering Practical Classes Resume This Week</h3>
+          <p>Grade 9&ndash;12 technical stream students must report to the Civil Engineering Lab with required materials.</p>
+        </div>
+      </article>
+      <article class="notice-card glass reveal" data-reveal>
+        <div class="notice-date"><span>02</span><small>Jeth</small></div>
+        <div class="notice-body">
+          <span class="notice-tag">Result</span>
+          <h3>SEE Result Felicitation Program</h3>
+          <p>Congratulations to our district toppers. A felicitation ceremony will be held at the school hall.</p>
+        </div>
+      </article>
+      <article class="notice-card glass reveal" data-reveal>
+        <div class="notice-date"><span>25</span><small>Baisakh</small></div>
+        <div class="notice-body">
+          <span class="notice-tag">Scholarship</span>
+          <h3>Scholarship Application Deadline Extended</h3>
+          <p>Eligible students from economically disadvantaged backgrounds may apply at the administration office.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section class="section testimonials" id="testimonials">
+  <div class="container">
+    <p class="section-eyebrow reveal" data-reveal centered>Voices</p>
+    <h2 class="section-title centered reveal" data-reveal>What People Say</h2>
+
+    <div class="testimonials-grid">
+      <div class="testimonial-card glass reveal" data-reveal>
+        <div class="testimonial-head">
+          <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?q=80&w=200&auto=format&fit=crop" alt="Portrait of a student">
+          <div>
+            <strong>Anita Bohara</strong>
+            <span>Grade 12, Civil Engineering Stream</span>
+          </div>
+        </div>
+        <p>&ldquo;The Civil Engineering lab gave me real hands-on experience. Our teachers explain everything practically, not just from books.&rdquo;</p>
+      </div>
+      <div class="testimonial-card glass reveal" data-reveal>
+        <div class="testimonial-head">
+          <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=200&auto=format&fit=crop" alt="Portrait of a parent">
+          <div>
+            <strong>Krishna Rana</strong>
+            <span>Parent</span>
+          </div>
+        </div>
+        <p>&ldquo;I trust this school for my children's future. The discipline and the focus on technical skills make a real difference.&rdquo;</p>
+      </div>
+      <div class="testimonial-card glass reveal" data-reveal>
+        <div class="testimonial-head">
+          <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?q=80&w=200&auto=format&fit=crop" alt="Portrait of a student">
+          <div>
+            <strong>Sita Joshi</strong>
+            <span>Grade 10 Student</span>
+          </div>
+        </div>
+        <p>&ldquo;Smart classrooms and the library have helped me prepare well for my SEE exams. I feel supported by all my teachers.&rdquo;</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ADMISSION ================= -->
+<section class="section admission" id="admission">
+  <div class="admission-bg" aria-hidden="true"></div>
+  <div class="container admission-inner reveal" data-reveal>
+    <h2 class="section-title">Admissions Open</h2>
+    <p>Join Durga Secondary School for ECD to Grade 12 and our Technical Civil Engineering Program. Limited seats available &mdash; scholarships for eligible students.</p>
+    <div class="admission-actions">
+      <a href="#contact" class="btn btn-gold">Apply Now</a>
+      <a href="#" class="btn btn-outline-light" download>Download Prospectus</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="section contact" id="contact">
+  <div class="container contact-grid">
+    <div class="contact-info reveal" data-reveal>
+      <p class="section-eyebrow">Get In Touch</p>
+      <h2 class="section-title">Contact Us</h2>
+      <p class="section-lead">We'd love to hear from you. Reach out for admissions, inquiries, or general information.</p>
+
+      <ul class="contact-list">
+        <li><span class="contact-icon">📞</span><div><strong>Phone</strong><a href="tel:+9779848845141">+977-9848845141</a></div></li>
+        <li><span class="contact-icon">✉️</span><div><strong>Email</strong><a href="mailto:dssimar2016@gmail.com">dssimar2016@gmail.com</a></div></li>
+        <li><span class="contact-icon">📍</span><div><strong>Address</strong><span>Simar, Dilasaini Rural Municipality&ndash;3, Baitadi, Sudurpashchim Province, Nepal</span></div></li>
+      </ul>
+
+      <div class="social-links">
+        <a href="https://www.facebook.com/durgamavi.simar" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.16 8.44 9.94v-7.03H7.9v-2.91h2.54V9.84c0-2.5 1.49-3.89 3.78-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.45 2.91h-2.33V22c4.78-.78 8.44-4.94 8.44-9.94Z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <form class="contact-form glass reveal" data-reveal>
+      <h3>Send a Message</h3>
+      <div class="form-row">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+      </div>
+      <input type="text" placeholder="Subject">
+      <textarea rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn btn-gold">Send Message</button>
+    </form>
+  </div>
+
+  <div class="container map-wrap reveal" data-reveal>
+    <iframe
+      title="Map showing Simar, Dilasaini Rural Municipality, Baitadi, Nepal"
+      src="https://www.google.com/maps?q=Baitadi,Nepal&output=embed"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="#home" class="brand">
+        <span class="brand-seal" aria-hidden="true">
+          <svg viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="46" fill="none" stroke="currentColor" stroke-width="3"/>
+            <circle cx="50" cy="50" r="36" fill="none" stroke="currentColor" stroke-width="1"/>
+            <text x="50" y="62" text-anchor="middle" font-family="Playfair Display" font-size="42" font-weight="800" fill="currentColor">D</text>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <strong>Durga Secondary School</strong>
+          <em>Simar · Baitadi</em>
+        </span>
+      </a>
+      <p>A public community school providing quality education from ECD to Grade 12, with a Technical Civil Engineering program affiliated to NEB &amp; CTEVT.</p>
+      <p class="footer-motto">&ldquo;Quality Education for Excellence and Innovation&rdquo;</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#teachers">Teachers</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#notices">Notices</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Academic Programs</h4>
+      <ul>
+        <li><a href="#academics">ECD</a></li>
+        <li><a href="#academics">Basic Level</a></li>
+        <li><a href="#academics">Secondary Level</a></li>
+        <li><a href="#academics">Grade 11 &amp; 12</a></li>
+        <li><a href="#civil">Civil Engineering</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact Information</h4>
+      <ul class="footer-contact">
+        <li>📞 <a href="tel:+9779848845141">+977-9848845141</a></li>
+        <li>✉️ <a href="mailto:dssimar2016@gmail.com">dssimar2016@gmail.com</a></li>
+        <li>📍 Simar, Dilasaini-3, Baitadi, Nepal</li>
+      </ul>
+      <div class="social-links">
+        <a href="https://www.facebook.com/durgamavi.simar" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.16 8.44 9.94v-7.03H7.9v-2.91h2.54V9.84c0-2.5 1.49-3.89 3.78-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.45 2.91h-2.33V22c4.78-.78 8.44-4.94 8.44-9.94Z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Durga Secondary School, Simar, Baitadi. All rights reserved.</p>
+    <p>School Code: 7418 &middot; Affiliated with NEB &amp; CTEVT</p>
+  </div>
+</footer>
+
+<!-- Back to top -->
+<a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">↑</a>
+
+<script>
+/* ============================================================
+   DURGA SECONDARY SCHOOL — SCRIPTS
+   ============================================================ */
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  /* ---------- Preloader ---------- */
+  const preloader = document.getElementById('preloader');
+  window.addEventListener('load', () => {
+    setTimeout(() => preloader.classList.add('loaded'), 300);
+  });
+
+  /* ---------- Header scroll state ---------- */
+  const header = document.getElementById('siteHeader');
+  const backToTop = document.getElementById('backToTop');
+
+  const onScroll = () => {
+    if (window.scrollY > 60) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+    if (window.scrollY > 500) {
+      backToTop.classList.add('show');
+    } else {
+      backToTop.classList.remove('show');
+    }
+  };
+  window.addEventListener('scroll', onScroll);
+  onScroll();
+
+  /* ---------- Mobile nav toggle ---------- */
+  const navToggle = document.getElementById('navToggle');
+  const mainNav = document.getElementById('mainNav');
+
+  navToggle.addEventListener('click', () => {
+    navToggle.classList.toggle('open');
+    mainNav.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', mainNav.classList.contains('open'));
+  });
+
+  /* Close mobile nav on link click */
+  document.querySelectorAll('.main-nav a').forEach(link => {
+    link.addEventListener('click', () => {
+      navToggle.classList.remove('open');
+      mainNav.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  /* ---------- Active nav link on scroll (scrollspy) ---------- */
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.main-nav a');
+
+  const spyObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.getAttribute('id');
+        navLinks.forEach(link => {
+          link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
+        });
+      }
+    });
+  }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
+
+  sections.forEach(section => spyObserver.observe(section));
+
+  /* ---------- Scroll reveal animations ---------- */
+  const revealEls = document.querySelectorAll('.reveal');
+
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        const delay = (entry.target.dataset.delay) || Math.min(i * 60, 240);
+        setTimeout(() => entry.target.classList.add('in-view'), delay);
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+
+  revealEls.forEach(el => revealObserver.observe(el));
+
+  /* ---------- Animated stat counters ---------- */
+  const counters = document.querySelectorAll('.stat-number[data-count]');
+
+  const animateCounter = (el) => {
+    const target = parseInt(el.dataset.count, 10);
+    const suffix = el.dataset.suffix || '';
+    const duration = 1400;
+    const start = performance.now();
+
+    const step = (now) => {
+      const progress = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3); // ease-out cubic
+      const value = Math.floor(eased * target);
+      el.textContent = value + suffix;
+      if (progress < 1) {
+        requestAnimationFrame(step);
+      } else {
+        el.textContent = target + suffix;
+      }
+    };
+    requestAnimationFrame(step);
+  };
+
+  const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateCounter(entry.target);
+        counterObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.6 });
+
+  counters.forEach(c => counterObserver.observe(c));
+
+  /* ---------- Gallery filter ---------- */
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const galleryItems = document.querySelectorAll('.gallery-item');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const filter = btn.dataset.filter;
+
+      galleryItems.forEach(item => {
+        if (filter === 'all' || item.dataset.cat === filter) {
+          item.classList.remove('hide');
+        } else {
+          item.classList.add('hide');
+        }
+      });
+    });
+  });
+
+  /* ---------- Contact form (front-end only) ---------- */
+  const contactForm = document.querySelector('.contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const btn = contactForm.querySelector('button[type="submit"]');
+      const original = btn.textContent;
+      btn.textContent = 'Message Sent ✓';
+      btn.style.opacity = '0.8';
+      contactForm.reset();
+      setTimeout(() => {
+        btn.textContent = original;
+        btn.style.opacity = '1';
+      }, 2500);
+    });
+  }
+
+  /* ---------- Footer year ---------- */
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+});
+
+</script>
+</body>
+</html>
